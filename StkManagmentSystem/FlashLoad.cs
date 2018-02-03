@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace StkManagmentSystem
 {
-    public partial class Form1 : Form
+    public partial class FlashLoad : Form
     {
-        public Form1()
+        public FlashLoad()
         {
             InitializeComponent();
+        }
+
+        private void loadingLable_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DashboardMain dash = new DashboardMain();
+            dash.Show();
+            
         }
     }
 }
